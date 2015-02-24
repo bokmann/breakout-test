@@ -13,6 +13,7 @@ GEM
     docile (1.1.0)
     global (0.0.2)
       activesupport
+    gosu (0.8.7.2)
     i18n (0.6.5)
     minitest (4.7.5)
     minitest_should (0.3.1)
@@ -38,6 +39,7 @@ DEPENDENCIES
   activesupport
   awesome_print
   global
+  gosu
   minitest (= 4.7.5)
   minitest_should
   rake

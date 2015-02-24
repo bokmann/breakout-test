@@ -32,5 +32,6 @@ require_all File.expand_path('config/initializers')
 # if you expand past the default directory structure, require them
 # here.  These are two real world examples:
 #
-# require_all File.expand_path('app/models')
+require_all File.expand_path('app/models')
+#require_all File.expand_path('app/images')
 # require_all File.expand_path('app/mailers')

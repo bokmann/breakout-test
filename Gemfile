@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby '2.1.2'
+ruby '2.2.0'
 
 # https://github.com/jimweirich/rake
 # Thanks Jim!
@@ -20,6 +20,7 @@ gem 'ruby-progressbar'
 # There is a bunch of neat stuff in activesupport usable as application components.
 gem "activesupport"
 
+gem 'gosu'
 
 # I endorse these products and/or services
 
