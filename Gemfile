@@ -6,6 +6,11 @@ ruby '2.2.0'
 # Thanks Jim!
 gem 'rake'
 
+group 'development' do
+  # https://github.com/michaeldv/awesome_print
+  gem "awesome_print"
+end
+
 # https://github.com/railsware/global
 # and great backstory: http://railsware.com/blog/2013/10/16/rails-configuration-in-the-proper-way
 gem 'global'
@@ -15,6 +20,8 @@ gem 'require_all'
 
 # https://github.com/jfelchner/ruby-progressbar
 gem 'ruby-progressbar'
+
+
 
 # https://github.com/rails/rails/tree/master/activesupport
 # There is a bunch of neat stuff in activesupport usable as application components.
@@ -104,10 +111,7 @@ gem 'gosu'
 
 # you can use environment-specific gemsets and
 # they will be automatically loaded
-group 'development' do
-  # https://github.com/michaeldv/awesome_print
-  gem "awesome_print"
-end
+
 
 group 'test' do
   # https://github.com/seattlerb/minitest

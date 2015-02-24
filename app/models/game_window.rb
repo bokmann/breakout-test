@@ -35,12 +35,18 @@ class GameWindow < Gosu::Window
 		end
 		@bricks.each do |brick|
 			if are_touching?(@ball, brick)
+        brick.ive_been_hit(self)
 				@ball.reverse_y
-				@bricks.delete brick 
 			end 
 		end
+    
+      exit(0) if @bricks.empty?
 	end
 
+  def delete_brick(brick)
+    @bricks.delete brick
+  end
+  
 	def draw
 		@ball.draw
 		@paddle.draw

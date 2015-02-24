@@ -13,4 +13,9 @@ class Brick
 		@image.draw(@x, @y, 1)
 	end 
 
+  def ive_been_hit(window)
+    puts "ouch"
+    window.delete_brick(self)
+  end
+  
 end 
