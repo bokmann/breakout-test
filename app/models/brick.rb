@@ -2,6 +2,8 @@ class Brick
 	attr_reader :x, :y, :w, :h
 
 	def initialize(window, x, y, point_value = 10)
+    @dead = false
+    @window = window
 		@x = x
 		@y = y
 		@w = 50
@@ -14,9 +16,10 @@ class Brick
 		@image.draw(@x, @y, 1)
 	end 
 
-  def ive_been_hit(window)
-    window.delete_brick(self)
-    window.update_score(@point_value)
+  def ive_been_hit
+    @dead = true
+    @window.delete_brick(self)
+    @window.update_score(@point_value)
   end
   
 end 

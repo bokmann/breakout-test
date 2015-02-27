@@ -37,7 +37,7 @@ class GameWindow < Gosu::Window
 		end
 		@bricks.each do |brick|
 			if are_touching?(@ball, brick)
-        brick.ive_been_hit(self)
+        brick.ive_been_hit
 				@ball.reverse_y
 			end 
 		end
