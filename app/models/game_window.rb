@@ -10,7 +10,9 @@ class GameWindow < Gosu::Window
 			(1..10).each do |col|
 				@bricks.push Brick.new(self, col * 70, rows * 30)
 			end
-		end 
+		end
+    @score = 0
+    @font = Gosu::Font.new(self, Gosu::default_font_name, 20)
 	end
 
 	def are_touching?(obj1, obj2) # to determine if ball and bricks are touching - generic collision method for two rectangles
@@ -45,6 +47,7 @@ class GameWindow < Gosu::Window
 
   def delete_brick(brick)
     @bricks.delete brick
+    @score += 1
   end
   
 	def draw
@@ -52,7 +55,8 @@ class GameWindow < Gosu::Window
 		@paddle.draw
 		@bricks.each do |brick|
 			brick.draw
-		end 
+		end
+    @font.draw("Score: #{@score}", 10, 10, 1.1, 1.0, 1.0, 0xffffff00)
 	end 
 
 end
