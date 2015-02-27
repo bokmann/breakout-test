@@ -47,7 +47,10 @@ class GameWindow < Gosu::Window
 
   def delete_brick(brick)
     @bricks.delete brick
-    @score += 1
+  end
+  
+  def update_score(points)
+    @score += points
   end
   
 	def draw
