@@ -1,3 +1,12 @@
+credit where credit is due:
+
+https://github.com/SamanthaRadocchia/breakout-game
+
+That is the original source of the ruby code for this project.  I needed a ruby equivalent to a breakout game that students in my high school class had in Java, and this was close.  I started with samantha's code, added it to the rask shell, then began changing the structure to do more.
+
+
+
+
 checkout, bundle install, and see if you can start the game with:
 
 rake game:play
