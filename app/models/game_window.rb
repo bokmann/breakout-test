@@ -6,7 +6,6 @@ class GameWindow < Gosu::Window
 		@ball = Ball.new(self)
 		@paddle = Paddle.new(self)
 		@bricks = []
-    @score = 0
 		(1..5).each do |rows|
 			(1..10).each do |col|
 				@bricks.push Brick.new(self, col * 70, rows * 30)
@@ -46,14 +45,6 @@ class GameWindow < Gosu::Window
 
   def delete_brick(brick)
     @bricks.delete brick
-  end
-  
-  def add_to_score(value)
-    @score = @score + value
-  end
-  
-  def score
-    @score
   end
   
 	def draw

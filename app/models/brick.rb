@@ -14,9 +14,8 @@ class Brick
 	end 
 
   def ive_been_hit(window)
-    window.add_to_score(10)
+    puts "ouch"
     window.delete_brick(self)
-    puts window.score
   end
   
 end 
