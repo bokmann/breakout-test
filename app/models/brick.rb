@@ -14,7 +14,6 @@ class Brick
 	end 
 
   def ive_been_hit(window)
-    puts "ouch"
     window.delete_brick(self)
   end
   
